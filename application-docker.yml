@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        health-check-url: http://consul-healthcare:8085/actuator/health
