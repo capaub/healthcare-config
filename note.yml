@@ -1,11 +1,9 @@
-build:
-  version: "3.0"
-
-note:
-  message: "Welcome to Healthcare note related local APIs "
-  contactDetails:
-    name: "Amaal Grega - Developer"
-    email: "amaal@healthcare.com"
-  onCallSupport:
-    - (452) 456-2176
-    - (546) 764-8934
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27018
+      database: ${DB_MONGO_NAME}
+      username: ${DB_MONGO_USER}
+      password: ${DB_MONGO_PASSWORD}
+      authentication-database: admin
