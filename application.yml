@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        health-check-url: http://host.docker.internal:8085/actuator/health
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
