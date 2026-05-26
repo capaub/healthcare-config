@@ -1,11 +1,8 @@
-build:
-  version: "3.0"
+spring:
+  cloud:
+    consul:
+      discovery:
+        port: 8084
 
-diabete-scoring:
-  message: "Welcome to healthcare Diabete scoring related local APIs "
-  contactDetails:
-    name: "John Doe - Developer"
-    email: "john@healthcare.com"
-  onCallSupport:
-    - (555) 555-1234
-    - (555) 523-1343
+server:
+  port: 8084
