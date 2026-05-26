@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3307/${DB_AUTH_NAME}?createDatabaseIfNotExist=true
+    username: ${DB_MYSQL_USER}
+    password: ${DB_MYSQL_PASSWORD}
+  cloud:
+    consul:
+      discovery:
+        port: 8085
+
+server:
+  port: 8085
