@@ -2,7 +2,8 @@ spring:
   cloud:
     consul:
       discovery:
-        health-check-url: http://host.docker.internal:8085/actuator/health
+        health-check-path: /actuator/health
+        health-check-interval: 10s
 
 management:
   endpoints:
