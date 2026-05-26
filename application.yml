@@ -2,6 +2,7 @@ spring:
   cloud:
     consul:
       discovery:
+        hostname: host.docker.internal
         health-check-path: /actuator/health
         health-check-interval: 10s
 
