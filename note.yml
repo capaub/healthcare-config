@@ -7,3 +7,10 @@ spring:
       username: ${DB_MONGO_USER}
       password: ${DB_MONGO_PASSWORD}
       authentication-database: admin
+  cloud:
+    consul:
+      discovery:
+        port: 8083
+
+server:
+  port: 8083
