@@ -3,7 +3,7 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3307/${DB_MYSQL_NAME}?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3307/${DB_USER_NAME}?createDatabaseIfNotExist=true
     username: ${DB_MYSQL_USER}
     password: ${DB_MYSQL_PASSWORD}
   cloud:
