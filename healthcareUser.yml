@@ -9,7 +9,6 @@ spring:
   cloud:
     consul:
       discovery:
-        hostname: host.docker.internal
         port: 8081
 server:
   port: 8081
