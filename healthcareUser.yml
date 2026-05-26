@@ -6,3 +6,10 @@ spring:
     url: jdbc:mysql://localhost:3307/${DB_MYSQL_NAME}?createDatabaseIfNotExist=true
     username: ${DB_MYSQL_USER}
     password: ${DB_MYSQL_PASSWORD}
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+        port: 8081
+server:
+  port: 8081
