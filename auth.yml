@@ -10,6 +10,10 @@ spring:
     consul:
       discovery:
         port: 8085
-
+jwt:
+  expiration: 86400000
+  private-key: ${JWT_PRIVATE_KEY}
+  public-key: ${JWT_PUBLIC_KEY}
+  
 server:
   port: 8085
